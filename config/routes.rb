@@ -1,4 +1,8 @@
 Awesome::Application.routes.draw do
+  resources :aliens
+
+  resources :pirates
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

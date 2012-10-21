@@ -1,0 +1,12 @@
+<%= form_tag '/pirates', :remote => true do %>
+	Name: <%= text_field_tag 'pirate[name]' %><br/>
+	<%= submit_tag 'Create a new Pirate!'%>
+<% end %>
+
+<div id="pirates">
+<%= render :partial => 'shared/pirate', :collection => @pirates, :as => :p %>
+</div>
+
+
+
+
